@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ON THE W.A.Y - Home</title>
+<link rel="stylesheet" href="/css/style_general.css">
+
+</head>
+	
+
+<body>
+	<aside>
+		<nav id="sideBar">
+			<ul>
+				<li><a href="home.html"><img src="/img/home.png" height="35" weight="35" alt="home"></a></li>
+				<li><a href="perfil.html"><img src="/img/user.png" height="35" weight="35" alt="user"></a></li>
+				<li><a href="about.html"><img src="/img/info.png" height="35" weight="35" alt="info"></a></li>	
+			</ul>
+			
+		<div class="selector_home"></div>
+		</nav>
+		
+		
+	</aside>
+	
+	<div class="logo">
+		<img src="/img/logos.png" width="200" height="200" alt="logo">
+	</div>
+    <main>
+        <h1>JOURNAL</h1>
+        <h3 class="data"></h3>
+
+<div id="Result"></div> 
+        <div id="popup">
+              <div id="editor" class="window">
+              
+            <h2 class="writingprompt1"></h2>
+            <textarea class="journalentry" name="entry" id="entry" cols="30" rows="10" placeholder="Write something here"></textarea>
+                <div id="buttons"> 
+                    <button id="submitbtn" class="mainbutton" onclick="add_element_to_array();">Submit</button>
+                    <button id="refreshbutton" class="mainbutton">Refresh</button>
+                </div>
+              </div>
+              <div id="mask"></div>
+            </div>
+        </div>
+        <div id="journalentries">
+            <span class="close">&times;</span>
+        </div>
+    </main>
+    <div id="newentry"><p>See entries</p></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/js/journal.js"></script>
+    </body>

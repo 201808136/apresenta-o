@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ON THE W.A.Y - Home</title>
+<link rel="stylesheet" type="text/css" href="/css/style_general.css">
+<link rel="stylesheet" type="text/css" href="/css/style_habits.css">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+	
+</head>
+	
+
+<body>
+	<aside>
+		<nav id="sideBar">
+			<ul>
+				<li><a href="home.html"><img src="/img/home.png" height="35" weight="35" alt="home"></a></li>
+				<li><a href="perfil.html"><img src="/img/user.png" height="35" weight="35" alt="user"></a></li>
+				<li><a href="about.html"><img src="/img/info.png" height="35" weight="35" alt="info"></a></li>	
+			</ul>
+			
+		<div class="selector_home"></div>
+		</nav>
+		
+		
+	</aside>
+	
+	<div class="logo">
+		<img src="/img/logos.png" width="200" height="200" alt="logo">
+	</div>
+	
+	<main>
+	<h1>HABIT TRACKER</h1>
+	<h3 id="data"></h3>
+	
+<div id="gráficos">
+	
+	<div id="slp">0%</div>
+	<div id="wk">0%</div>
+	<div id="xx">0%</div>
+	<div id="et">0%</div>
+	</div>
+		<div id="changedays">
+			<button id="am">When did you go to bed early?</button>
+			<button id="gr">When did you wake up early?</button>
+			<button id="ok">When did you eat healthy?</button>
+			<button id="ng">When did you work out?</button>
+		</div>
+		<p id="other">Please press the button to go to the next habit.</p>
+
+	
+	
+
+	<div class="container">
+		<div class="calendar">
+		  <div class="month">
+			<i class="fas fa-angle-left prev"></i>
+			<div class="date">
+			  <h1></h1>
+			  <p></p>
+			</div>
+			<i class="fas fa-angle-right next"></i>
+		  </div>
+		  <div class="weekdays">
+			<div>Sun</div>
+			<div>Mon</div>
+			<div>Tue</div>
+			<div>Wed</div>
+			<div>Thu</div>
+			<div>Fri</div>
+			<div>Sat</div>
+		  </div>
+		  <div class="days"></div>
+		</div>
+	  </div>
+		  </div>
+	  
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/js/p5.js"></script>
+	<script src="/js/calendarios.js"></script>
+	<script src="/js/habits.js"></script>
+</body>
+</html>

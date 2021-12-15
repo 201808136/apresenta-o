@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style_index.css">
+</head>
+
+<body>
+    <div id="logo">
+        <img src="/img/logos.png" alt="logo" class="centered" style="width: 180px;">
+        <h1 id="nome">ON THE W.A.Y.</h1>
+    </div>
+
+
+    <div id="about">
+        <h1>About us</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <button id="start">Get Started</button>
+    </div>
+
+    <div id="logs">
+        <h1>Welcome</h1>
+        <form id="login">
+            <label for="user">Username</label>
+            <input type="text" name="user" id="user" class="login_field">
+            <label for="password">Password</label>
+            <input type="password" value="FakePSW" name="password" id="password" class="login_field">
+         <!--  <input type="checkbox" onclick="myFunction()">Show Password--> 
+         <p id="warn">*please fill in the username.</p>
+        </form>
+        <button id="save" >Log in.</button>
+        <p class="small">Don't have an account? Then sign up <a id="su" class="links">here.</a></p>
+    </div>
+
+    <div id="signs">
+        <h1>Welcome</h1>
+        <form id="login">
+            <label for="user">Name</label>
+            <input type="text" name="user" id="user" class="login_field">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" class="login_field">
+            <label for="password">Password</label>
+            <input type="password" value="FakePSW" name="password" id="password" class="login_field">
+            <p id="warn">*please fill in the username.</p>
+        </form>
+        <button id="save">Sign up.</button>
+        <p class="small">Do you already have an account? Then login <a id="lg" class="links">here.</a></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/sketch_index.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
