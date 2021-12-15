@@ -1,0 +1,150 @@
+#am, #gr, #ok, #ng, #aw{
+    border-radius: 5%;
+    width: 250px;
+    height: 150px;
+    margin-top: -40px;
+    margin-left: 33px;
+    border: none;
+    cursor: pointer;
+}
+
+
+#notgreat, #ng, #et{
+  background-color: rgb(245, 209, 202);
+}
+
+#okay, #ok, #xx{
+  background-color: rgb(250, 219, 161);
+}
+
+#great, #gr, #wk{
+  background-color: rgb(228, 218, 127);
+}
+
+#amazing, #am, #slp{
+  background-color: rgb(157, 167, 135);
+}
+
+form, #changedays{
+  position: absolute; /* Stay in place */
+  padding-left: 500px;
+  padding-top: 400px;
+}
+
+#Result{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.post{
+background-color: rgb(214, 214, 214);
+padding: 20px;
+margin: 10px;
+}
+
+.modal {
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 320px; /* Location of the box */
+  padding-left: 300px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+
+html {
+font-size: 62.5%;
+}
+
+.container {
+position: absolute; /* Stay in place */
+z-index: 1; /* Sit on top */
+margin-top: 70px;
+color: black;
+/*display: flex;*/
+justify-content: center;
+align-items: center;
+}
+
+.calendar {
+width: 45rem;
+height: 52rem;
+background-color: white ;
+}
+
+.month {
+width: 410px;
+height: 12rem;
+display: flex;
+padding: 17px;
+justify-content:space-between;
+align-items: center;
+}
+
+.weekdays {
+width: 100%;
+height: 5rem;
+display: flex;
+align-items: center;
+}
+
+.weekdays div {
+font-size: 1.5rem;
+font-weight: 400;
+letter-spacing: 0.1rem;
+width: calc(44.2rem / 7);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.days {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.days div {
+border-radius: 50%;
+font-size: 1.4rem;
+margin: 0.55rem;
+width: 5rem;
+height: 5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 0.1rem solid rgb(163, 163, 163);
+transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+border: 0.1rem solid rgb(163, 163, 163);
+cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+opacity: 0.5;
+}
+
+#gráficos{
+position: absolute; /* Stay in place */
+padding-left: 530px;
+padding-top: 230px;
+font-size: 40px;
+display: grid;
+grid-template-columns: auto auto;
+opacity: 0;
+}
+
+#other{
+  position: absolute;
+margin-top: 560PX;
+margin-left: 530px;
+}
+
+#slp,#xx,#wk,#et{
+  padding: 60px;
+  margin: 10px;
+}

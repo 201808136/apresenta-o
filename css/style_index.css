@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62,100;125,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap');
+
+body{
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+button {
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  background-color: white; /* Green */
+  border: none;
+  margin-top: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.centered {
+position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -160px;
+  margin-left: -100px;
+  }
+
+#nome{
+    position: fixed;
+    font-size: 25px;
+    font-weight: 200;
+    top: 50%;
+  left: 50%;
+  margin-top: 50px;
+  margin-left: -90px;
+  letter-spacing: 1px;
+  }
+
+  #about{
+    width: 40%;
+    position: fixed;
+    font-weight: 200;
+    top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -380px;
+background-color: white;
+padding: 40px;
+  }
+
+  #logs, #signs{
+    width: 40%;
+    position: fixed;
+    font-weight: 200;
+    top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -380px;
+background-color: white;
+padding: 40px;
+text-align: center;
+align-items: center;
+  }
+
+  #logo, #about {
+    opacity: 0;
+
+    -webkit-transition: opacity 3s ease-in;
+       -moz-transition: opacity 3s ease-in;
+        -ms-transition: opacity 3s ease-in;
+         -o-transition: opacity 3s ease-in;
+            transition: opacity 3s ease-in;
+}
+
+#logo load {
+    opacity: 1;
+}
+
+#about load {
+  opacity: 1;
+}
+
+
+h1 {
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  font-size: 45px;
+}
+
+#login {
+  max-width: 250px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.login_field {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  border: solid #e0cbc5 1pt;
+  box-shadow: #ECE9E8 0 5px 5px 0;
+}
+
+button {
+  margin: 25px 0;
+  padding: 10px;
+  background-color: #e0cbc5;
+  border-radius: 5px;
+}
+
+button:hover{
+  transform: scale(1.08);
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+

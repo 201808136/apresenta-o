@@ -1,0 +1,518 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@104.3,614&display=swap');
+
+
+body {
+	margin-left:0px;
+	font-family: 'Archivo', sans-serif;
+}
+
+/*Lateral Menu Icon*/
+#dc {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	padding: 9px;
+	border-radius: 3px;
+	position: relative;
+}
+
+#dc:checked{
+	background-color: #999B84;
+	border: 1px solid #999B84;
+	color: #99a1a7;
+}
+
+	.selector_home {
+	background: #999B84;
+	width: 10px;
+	height: 70px;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	}
+
+	.selector_profile {
+	background: #999B84;
+	width: 10px;
+	height: 70px;
+	position: absolute;
+	top: 195px;
+	left: 0;
+	}
+
+	.selector_about {
+	background: #999B84;
+	width: 10px;
+	height: 70px;
+	position: absolute;
+	top: 330px;
+	left: 0;
+	}
+
+
+/*Menu*/
+
+	aside {
+	position: absolute;
+	margin-top:60px;
+	}
+
+	#sidebar {
+	display: flex;
+	top: 0;
+	margin-left: -10px;
+	background: #FFFFFF;
+	width: 200px;
+	height: 500px;
+	margin-bottom: 50px;
+	}
+
+	#sidebar ul {
+	margin: 0;
+	padding: 20px 0;
+	width:10px;
+	background:#999B84
+	} 
+
+	ul li {
+	list-style:none;
+	}
+
+	ul li a {
+
+	padding-bottom: 50px;
+	padding-top: 50px;
+	display:block;
+	text-decoration: none;
+	font-weight: 600;	
+	}
+
+	ul img{
+		width: 35px;
+		height: 35px;
+	}
+
+/*General Definitions*/
+
+	main {
+	margin-left: 300px;
+	width: 400px;
+	margin-top:100px;
+	}
+
+	h1 {
+	font-size: 40px;
+	margin-bottom: 10px;
+	}
+
+	h2 {
+	font-size:22px;
+	}
+
+	.logo img {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 200px;
+	height: 200px;
+	}
+
+	a {
+	text-decoration: none;
+	}
+
+	p {
+	color: black;
+	font-size: 14px;
+	}
+
+/*Home Page Options*/
+
+	#options p {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 70px 0;
+	color: #FFFFFF;	
+	font-size: 16px;
+	}
+
+	.prompts {
+	position: absolute;
+	margin-left:300px;
+	margin-top: 30px;
+	width: 300px;
+	height:200px;
+	background: #C0C39C;
+	border-radius: 5%;
+	}
+
+	.prompts:hover {
+	background: #9a9c7d;
+	border-radius: 5%;
+	transition: all .3s ease;
+	}
+
+	.moods {
+	margin-left:620px;
+	margin-top: 30px;
+	width: 250px;
+	height:200px;
+	background: #C0C39C;
+	border-radius: 5%;
+	position: absolute;
+	}
+
+		.moods:hover {
+		background: #9a9c7d;
+		border-radius: 5%;
+		transition: all .3s ease;
+		}
+
+	.habits {
+	position: absolute;
+	margin-left:300px;
+	margin-top: 250px;
+	width: 250px;
+	height:200px;
+	background: #C0C39C;
+	border-radius: 5%;
+	}
+
+		.habits:hover {
+		background: #9a9c7d;
+		border-radius: 5%;
+		transition: all .3s ease;
+		}
+
+	.challenges {
+	margin-left:570px;
+	margin-top: 250px;
+	width: 300px;
+	height:200px;
+	background: #C0C39C;
+	border-radius: 5%;
+	position: absolute;
+	}
+
+		.challenges:hover {
+		background: #9a9c7d;
+		border-radius: 5%;
+		transition: all .3s ease;
+		}
+
+
+/*Profile Page*/
+
+	button {
+	font-weight: 100px;
+	margin-bottom: 30px;
+	}
+
+
+	#user img{
+	border-style: solid;
+	border-radius: 50px;
+	border-color: #C0C39C;
+	margin-bottom: 10px;
+	}
+
+	#badges {
+	margin-top: 150px;
+	height: 100px;
+	position: absolute;
+	display: flex;
+	}
+
+	.ball {
+	background: #D2D2D2;
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	margin-right: 60px;
+	}
+
+	figcaption {
+	display: flex;
+	margin-top: 10px;
+	text-align: center;
+	width: 80px;
+	font-size: 14px;
+	}
+
+	#mask, #mask2 {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 9000;
+		background-color: #000;
+		display: none;
+	  }
+	  
+	  #popup .window{
+		position: absolute;
+		left: 400px;
+		top: 200;
+		width: 440px;
+		height: 200px;
+		padding: 20px;
+		border-radius: 15px;
+		text-align: center;
+	  }
+	  
+	  #popup #editor {
+		width: 50%;
+		height: 600px;
+		padding: 10px;
+		background-color: #ffffff;
+		font-family: 'Archivo', sans-serif;
+		font-size: 15pt;
+	  }
+	  
+	  #buttons{
+		font-size: 16pt;
+		position: absolute;
+		bottom: 0px;
+		width: 50%;
+		left: 25%;
+	  }
+
+	  #journalentries{
+		  display: none;
+		  grid-template-columns: auto auto;
+  		 position: fixed; /* Stay in place */
+  		z-index: 1; /* Sit on top */
+  		left: 400px;
+  		top: 200px;
+  		width: 850px; /* Full width */
+  		height: 600px; /* Full height */
+  		overflow: auto; /* Enable scroll if needed */
+  		background-color: rgb(255, 255, 255); /* Fallback color */
+  		background-color: #e0cbc5; /* Black w/ opacity */
+	  }
+
+	  .post{
+		  margin: 20px;
+	  }
+
+	  .close {
+		position: absolute;
+		top: 15px;
+		right: 35px;
+		color: rgb(241, 223, 223);
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+	  }
+	  
+	  .close:hover,
+	  .close:focus {
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		cursor: pointer;
+	  }
+
+	button{
+		margin: 25px 0;
+    	padding: 10px;
+    	background-color: #e0cbc5;
+    	border-radius: 5px;
+		border: none;
+		font-family: 'Archivo', sans serif;
+		cursor: pointer;
+	}
+	button:hover{
+		box-shadow: 1px 3px 3px 1px #C0C39C;
+	}
+	#backbtn{
+		background-color: #999B84;
+	}
+	.primarybutton{
+		background-color: #e0cbc5;
+		padding: 10px;
+		margin: 50px 0 0 10px;
+		font-size: 11px;
+	}
+	.secondarybutton{
+		background-color: #999B84;
+		padding: 10px;
+		margin: 50px 10px 0 50px;
+		font-size: 11px;
+		margin-left: 50px;
+	}
+	.mainbutton{
+		margin: 25px 10px;
+	}
+	#entry{
+		width: 80%;
+		height: 350px;
+		font-family: 'Archivo', sans serif;
+		font-size: 14px;
+		margin: 5% 10%;
+		padding: 10px;
+	}
+	  #newentry {
+		position: absolute;
+		right: 50px;
+		bottom: 50px;
+		height: 100px;
+		width: 100px;
+		background-color: #999B84;
+		border-radius: 50%;
+		text-align: center;
+		font-size: 15px;
+	  }
+
+	  #newentry p{
+		  font-size: 15px;
+		  position: absolute;
+		right: 10px;
+		bottom: 27px;
+	  }
+/*journal*/
+	  .card{
+		  width: 70%;
+		  border: solid 1pt #999B84;
+		  border-radius: 5%;
+		  height: 300px;
+		  margin: 30px 0;
+		  box-shadow: 3px 7px 5px 3px #C0C39C;
+	  }
+
+	  .writingprompt1, .currentdate{
+		  padding: 0 10px;
+	  }
+
+	  #mobilenav{
+		  display: none;
+	  }
+/*tablet*/
+
+@media screen and (max-width: 1080px) {
+	.logo img{
+		width: 150px;
+		height: 150px;
+	}
+	main{
+		width: 70%;
+		margin-left: 30%;
+	}
+	#options{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 70%;
+		max-width: 600px;
+		margin-left: 30%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		justify-content: left;
+	}
+	.prompts, .moods, .habits, .challenges{
+		position: relative;
+		width: 40%;
+		max-width: 260px;
+		height: 200px;
+		margin: 0 20px 20px 0;
+	}
+	#sidebar{
+		width: 30%;
+		max-width: 200px;
+	}
+	#abouttext{
+		max-width: 400px;
+	}
+}
+/*mobile version*/
+@media screen and (max-width: 480px){
+.icons{
+		width: 40px;
+		height: 40px;
+	} 
+#mobilenav{
+	width: 100%;
+	height: 110px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+}
+
+#mobilenav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+	padding: 0;
+	margin: 0;
+}
+#mobilenav li{
+	padding: 0;
+}
+#mobilenav a{
+	padding: 0;
+}
+aside{
+	display: none;
+}
+.prompts, .habits{
+	margin-left: 25px;
+}
+.prompts, .moods, .habits, .challenges{
+height: 150px;
+}
+#options{
+	margin: 0;
+	width: 100%;
+	justify-content: center;
+}
+#options p{
+	font-size: 14px;
+	padding: 50px 0;
+}
+main{
+	width: 90%;
+	margin-left: 10%;
+}
+.logo img{
+	width: 100px;
+	height: 100px;
+}
+#bar_home{
+	width: 100%;
+	height: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#color, .blank{
+width: 45px;
+height: 10px;
+}
+#color{
+	background-color: #9a9c7d;
+}
+}
+@media screen and (max-width: 350px){
+	.prompts, .moods, .habits, .challenges{
+		width: 38%;
+		height: 120px;
+	}
+	#options p{
+		padding: 35px 0;
+		font-size: 12px;
+	}
+
+}
+
+  
+.data {
+	font-size: 62.5%;
+	}
+	
+
+.prompt{
+	font-size: 20PX;
+}

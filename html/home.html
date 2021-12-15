@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ON THE W.A.Y - Home</title>
+<link rel="stylesheet" type="text/css" href="/css/style_general.css">
+	
+</head>
+	
+
+<body>
+	<aside>
+		<nav id="sideBar">
+			<ul>
+				<li><a href="home.html"><img src="/img/home.png" height="35" weight="35" alt="home"></a></li>
+				<li><a href="perfil.html"><img src="/img/user.png" height="35" weight="35" alt="user"></a></li>
+				<li><a href="about.html"><img src="/img/info.png" height="35" weight="35" alt="info"></a></li>	
+			</ul>
+			
+		<div class="selector_home"></div>
+		</nav>
+		
+		
+	</aside>
+	
+	<div class="logo">
+		<img src="/img/logos.png" width="200" height="200" alt="logo">
+	</div>
+	
+	<main>
+	<h1 id="id">Hello!</h1>
+	<h2>Let's do something!</h2>
+	</main>
+	
+	
+	
+	<div id="options">
+		<div class="prompts"><a href="/html/journal.html"><p>Journal</p></a></div>
+		<div class="moods"><a href="/html/mood.html"><p>Mood Tracker</p></a></div>
+		<div class="habits"><a href="/html/habits.html"><p>Habit Tracker</p></a></div>
+		<div class="challenges"><a href="/html/challenges.html"><p>Daily Challenge</p></a></div>
+	</div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		var nom = localStorage.getItem("nome");
+document.querySelector("#id").innerHTML = "Hello, " + nom + "!";
+	</script>
+	
+</body>
+</html>
